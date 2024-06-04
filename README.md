@@ -12,7 +12,7 @@ This repository is a companion to the [ML applications with MPLAB ML tutorial](h
 The ML Development Suite streamlines the development of machine learning solutions specifically tailored for application and deployment on Microchip’s microcontrollers and microprocessors. This manual offers a comprehensive walkthrough, demonstrating the steps to gather 6-axis IMU data from the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit, transmit the acquired data to the ML Model Builder, construct a personalized model capable of accurately classifying the input data, and ultimately deploy the model onto the Machine Learning Evaluation Kit.   
 
 ## Hardware Used
-* dsPIC33CK LVMC Development Board [(DM330031)](https://www.microchip.com/en-us/development-tool/dm330031)
+* PIC32CX-BZ2 and WBZ451 Curiosity Development Board [(PIC33CX-BZ2)](Images/220209-wsg-photo-ev96b94a-front-transparent.avif)
 * 24V 3-Phase Brushless DC Motor [(AC300020)](https://www.microchip.com/en-us/development-tool/ac300020)
 
 ## Software Used
