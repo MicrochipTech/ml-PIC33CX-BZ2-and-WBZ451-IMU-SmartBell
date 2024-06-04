@@ -2,9 +2,9 @@
  ![logo_microchip](Images/microchip.png)  ![logo_ml](Images/MPLAB-MachineLearning.png)
 
 
-| ![SmartBell](assets/PredictiveMaintananceDemo.gif) |
+| ![SmartBell](Images/1.PNG) |
 | :----------------------------------------------------------: |
-|            Deployed Predictive Maintenance System            |
+|                        |
 
 ## Repository Overview
 This repository is a companion to the [ML applications with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). It contains the firmware to Transform your conventional dumbbell into an intelligent training device utilizing the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit in conjunction with the MPLAB X Machine Learning Development Suite on [PIC33CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/ev96b94a) with the [Mikroe IMU Click board](https://www.mikroe.com/6dof-imu-2-click)
