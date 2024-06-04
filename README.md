@@ -1,5 +1,5 @@
 # ml-pic33cx-bz2-and-wbz451-IMU-SmartBell
- ![logo_microchip](images/microchip.png)  ![logo_ml](images/MPLAB-MachineLearning.png)
+ ![logo_microchip](Images/microchip.png)  ![logo_ml](Images/MPLAB-MachineLearning.png)
 
 
 | ![SmartBell](assets/PredictiveMaintananceDemo.gif) |
