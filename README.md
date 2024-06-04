@@ -13,7 +13,10 @@ The ML Development Suite streamlines the development of machine learning solutio
 
 ## Hardware Used
 * PIC32CX-BZ2 and WBZ451 Curiosity Development Board ![Curiosity Development Board](Images/wsg.png)
-* 24V 3-Phase Brushless DC Motor [(AC300020)](https://www.microchip.com/en-us/development-tool/ac300020)
+* 6DOF IMU 17 CLICK ![Click Boards](Images/2.png)
+* Mounting Putty  ![Mounting Putty](Images/Picture1.png)
+* Dumbbell ![Dumbbell](Images/Picture2.png)
+  
 
 ## Software Used
 * [MPLAB® X IDE](https://microchip.com/mplab/mplab-x-ide)
