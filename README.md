@@ -7,7 +7,7 @@
 |            Deployed Predictive Maintenance System            |
 
 ## Repository Overview
-This repository is a companion to the [Predictive Maintenance with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). It contains the firmware to classify the operational state of a motor - whether the motor is in normal condition or experiencing any anomalies such as unbalanced load by monitoring Iq current of the motor on [dsPIC33CK LVMC Development Board](https://www.microchip.com/en-us/development-tool/dm330031) with the [24V 3-Phase Brushless DC Motor](https://www.microchip.com/en-us/development-tool/ac300020)
+This repository is a companion to the [ML applications with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). It contains the firmware to Transform your conventional dumbbell into an intelligent training device utilizing the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit in conjunction with the MPLAB X Machine Learning Development Suite on [PIC33CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/ev96b94a) with the [Mikroe IMU Click board](https://www.mikroe.com/6dof-imu-2-click)
 
 The supported Classifications (shown in the video above) are:
 
