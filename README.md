@@ -13,7 +13,7 @@ The ML Development Suite streamlines the development of machine learning solutio
 
 ## Hardware Used
 * PIC32CX-BZ2 and WBZ451 Curiosity Development Board
-  <img src="Images/wsg.png" width="200" height="1000">
+  <img src="Images/wsg.png" width="2000" height="100">
 * 6DOF IMU 17 CLICK
 * <img src="Images/2.PNG" width="100" height="100">
 * Mounting Putty
