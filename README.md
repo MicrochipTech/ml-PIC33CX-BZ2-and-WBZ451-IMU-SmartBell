@@ -31,11 +31,12 @@ The ML Development Suite streamlines the development of machine learning solutio
 
 ## Software Used
 * [MPLAB® X IDE](https://microchip.com/mplab/mplab-x-ide)
-* [MPLAB® XC16 Compiler](https://microchip.com/mplab/compilers)
+* [MPLAB® XC32 Compiler](https://microchip.com/mplab/compilers)
 * [MPLAB® Code Configurator](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 * [MPLAB® ML Model Builder](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MPLAB-ML-Documentation&redirect=true)
 
 ## Setup
+The kit is mounted on one end of the dumbbell using double-sided sticky tape and rubber bands. The USB cable is tied around the handle to prevent the kit from being pulled off.
   | ![Dumbbell](Images/Picture3.jpg) |
   | :--: |
   | *Smartbell setup* |  
