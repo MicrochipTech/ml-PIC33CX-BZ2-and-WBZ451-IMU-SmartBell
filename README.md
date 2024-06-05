@@ -12,10 +12,21 @@ This repository is a companion to the [ML applications with MPLAB ML tutorial](h
 The ML Development Suite streamlines the development of machine learning solutions specifically tailored for application and deployment on Microchip’s microcontrollers and microprocessors. This manual offers a comprehensive walkthrough, demonstrating the steps to gather 6-axis IMU data from the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit, transmit the acquired data to the ML Model Builder, construct a personalized model capable of accurately classifying the input data, and ultimately deploy the model onto the Machine Learning Evaluation Kit.   
 
 ## Hardware Used
-* PIC32CX-BZ2 and WBZ451 Curiosity Development Board ![Curiosity Development Board](Images/wsg.png)
-* 6DOF IMU 17 CLICK ![Click Boards](Images/2.png)
-* Mounting Putty  ![Mounting Putty](Images/Picture1.png)
-* Dumbbell ![Dumbbell](Images/Picture2.png)
+ * | ![curiosity development board ](Images/wsg.png) |
+   | :--: |
+   | *[PIC32CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/ev96b94a)* |
+
+ * | ![IMU ](Images/2.PNG) |
+   | :--: |
+   | *[Mikroe 6DOF IMU 17 CLICK](https://www.microchip.com/en-us/development-tool/ev96b94a)* |
+
+ * | ![Mounting Putty ](Images/Picture1.png) |
+   | :--: |
+   | *[Mounting Putty]* |
+
+ * | ![Dumbbell](Images/Picture2.png) |
+   | :--: |
+   | *[Dumbbell]* |  
   
 
 ## Software Used
