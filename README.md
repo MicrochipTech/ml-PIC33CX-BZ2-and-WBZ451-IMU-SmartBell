@@ -76,7 +76,7 @@ The behavior of the firmware can be summarized as operating in one of the distin
 
  
 
-- Open project properties and ensure that the selected MPLAB® XC16 Compiler and Device Pack support the device configured in the firmware. 
+- Open project properties and ensure that the selected MPLAB® XC32 Compiler and Device Pack support the device configured in the firmware. 
 
 - Build the project and program the device. 
 
