@@ -22,11 +22,11 @@ The ML Development Suite streamlines the development of machine learning solutio
 
  * | ![Mounting Putty ](Images/Picture1.png) |
    | :--: |
-   | *[Mounting Putty]* |
+   | *Mounting Putty* |
 
  * | ![Dumbbell](Images/Picture2.png) |
    | :--: |
-   | *[Dumbbell]* |  
+   | *Dumbbell* |  
   
 
 ## Software Used
@@ -36,7 +36,7 @@ The ML Development Suite streamlines the development of machine learning solutio
 * [MPLAB® ML Model Builder](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MPLAB-ML-Documentation&redirect=true)
 
 ## Setup
-  | ![Dumbbell](Images/Picture3.jpeg) |
+  | ![Dumbbell](Images/Picture3.jpg) |
   | :--: |
   | *Smartbell setup* |  
 
