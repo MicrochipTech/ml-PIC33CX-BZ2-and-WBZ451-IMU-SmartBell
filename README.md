@@ -35,6 +35,11 @@ The ML Development Suite streamlines the development of machine learning solutio
 * [MPLAB® Code Configurator](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 * [MPLAB® ML Model Builder](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MPLAB-ML-Documentation&redirect=true)
 
+## Setup
+  | ![Dumbbell](Images/Picture3.jpeg) |
+  | :--: |
+  | *Smartbell setup* |  
+
 ## Related Documentation
 * dsPIC33CH512MP508 [Product Family Page](https://www.microchip.com/en-us/product/dspic33ch512mp508)
 * motorBench® Development Suite [Software Plugin Details](https://www.microchip.com/en-us/solutions/technologies/motor-control-and-drive/motorbench-development-suite)
