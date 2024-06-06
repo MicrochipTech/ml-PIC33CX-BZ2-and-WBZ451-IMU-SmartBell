@@ -38,7 +38,7 @@ repo), transmit the acquired data to the ML Model Builder, construct a personali
 
 ## Setup
 The kit is mounted on one end of the dumbbell using double-sided sticky tape and rubber bands. The USB cable is tied around the handle to prevent the kit from being pulled off.
-  | ![Dumbbell](Images/Picture3.jpg) |
+  | ![Dumbbell](Images/Picture4.jpg) |
   | :--: |
   | *Smartbell setup* |  
 
