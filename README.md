@@ -76,7 +76,7 @@ How to Configure, Compile and Flash
 This document explains the steps involved in configuring the data logger firmware build, compiling it and flashing it to the PIC32CX-BZ2 device. Follow the instructions below:
 1.	Connect the Curiosity Nano board to your PC using a USB cable.
 2.	Install the MPLAB X IDE and XC32 compiler on your PC. These are essential tools for loading the data logger project and programming the PIC32CX-BZ2 board.
-3.	Open the [firmware](firmware) project folder in MPLAB X.
+3.	Open the [firmware](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger/tree/main/firmware) project folder in MPLAB X.
 4.	Choose the appropriate MPLAB X Project Configuration for your sensor based on the table provided below.
 Select the data streaming format you want by setting the DATA_STREAMER_FORMAT macro in firmware/src/app_config.h to the appropriate value as summarized in the table below.
 Figure 1-18. Selecting the type of data streamer format.
