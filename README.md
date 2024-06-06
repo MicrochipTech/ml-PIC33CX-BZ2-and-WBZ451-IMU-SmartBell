@@ -9,7 +9,8 @@
 ## Repository Overview
 This repository is a companion to the [ML applications with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). It contains the firmware to Transform your conventional dumbbell into an intelligent training device utilizing the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit in conjunction with the MPLAB X Machine Learning Development Suite on [PIC33CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/ev96b94a) with the [Mikroe IMU Click board](https://www.mikroe.com/6dof-imu-2-click)
 
-The ML Development Suite streamlines the development of machine learning solutions specifically tailored for application and deployment on Microchip’s microcontrollers and microprocessors. This manual offers a comprehensive walkthrough, demonstrating the steps to gather 6-axis IMU data from the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit, transmit the acquired data to the ML Model Builder, construct a personalized model capable of accurately classifying the input data, and ultimately deploy the model onto the Machine Learning Evaluation Kit.   
+The ML Development Suite streamlines the development of machine learning solutions specifically tailored for application and deployment on Microchip’s microcontrollers and microprocessors. This manual offers a comprehensive walkthrough, demonstrating the steps to gather 6-axis IMU data from the PIC32CX-BZ2 / WBZ451 Machine Learning Evaluation Kit( the logger firmware can be found on the latest GitHub [ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger?tab=readme-ov-file)
+repo), transmit the acquired data to the ML Model Builder, construct a personalized model capable of accurately classifying the input data, and ultimately deploy the model onto the Machine Learning Evaluation Kit.   
 
 ## Hardware Used
  * | ![curiosity development board ](Images/wsg.png) |
@@ -44,10 +45,11 @@ The kit is mounted on one end of the dumbbell using double-sided sticky tape and
 
 
 ## Data Collection
-The [dataset](/dataset) used for the development of this application consists of Motor IQ current and Motor RPM measurements taken from a 24V 3-Phase Brushless DC Motor connected to a dsPIC33CK LVMC Development Board, running on an FOC motor control algorithm. No sensors were used in this application. For further description of the application setup, see the [Predictive Maintenance with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). 
+The [dataset](/Dataset) used for the development of this application consists of data files of Overhead press, bicep curl and lateral raises exercises.
 
+             ![Exercises](Images/macros.png)
 ## Data Collection Firmware
-A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-33ck265mp508-lvmc-datalogger](https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger) repository.
+A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-PIC33CX-BZ2 and WBZ451 data logger]([https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger)) repository.
 
 ## Firmware Operation
 
