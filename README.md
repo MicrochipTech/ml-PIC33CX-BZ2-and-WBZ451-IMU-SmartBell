@@ -54,7 +54,7 @@ To begin the data collection process, it is essential to identify a suitable sen
 
 
 ## Sensor Installation
-•	To attach the PIC32CX-BZ2 board to the Dumbbell, a standard mounting putty was utilized, which is commonly used for mounting lightweight objects like posters onto walls. The board was placed in its default orientation, where the accelerometer reads X=0, Y=0, Z=1g. The placement was chosen for its ease of installation and no particular reason.
+To attach the PIC32CX-BZ2 board to the Dumbbell, a standard mounting putty was utilized, which is commonly used for mounting lightweight objects like posters onto walls. The board was placed in its default orientation, where the accelerometer reads X=0, Y=0, Z=1g. The placement was chosen for its ease of installation and no particular reason.
 Sensor Sampling Configuration
 The sensor sampling parameters are summarized below:
 •	Sensor: 3-axis Accelerometer + 3-axis Gyrometer
