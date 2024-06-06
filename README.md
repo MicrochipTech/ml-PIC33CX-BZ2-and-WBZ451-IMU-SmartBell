@@ -41,9 +41,7 @@ The kit is mounted on one end of the dumbbell using double-sided sticky tape and
   | :--: |
   | *Smartbell setup* |  
 
-## Related Documentation
-* dsPIC33CH512MP508 [Product Family Page](https://www.microchip.com/en-us/product/dspic33ch512mp508)
-* motorBench® Development Suite [Software Plugin Details](https://www.microchip.com/en-us/solutions/technologies/motor-control-and-drive/motorbench-development-suite)
+
 
 ## Data Collection
 The [dataset](/dataset) used for the development of this application consists of Motor IQ current and Motor RPM measurements taken from a 24V 3-Phase Brushless DC Motor connected to a dsPIC33CK LVMC Development Board, running on an FOC motor control algorithm. No sensors were used in this application. For further description of the application setup, see the [Predictive Maintenance with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). 
@@ -55,38 +53,30 @@ A binary build of the data logging firmware used in the data collection for this
 
 The behavior of the firmware can be summarized as operating in one of the distinct states described in the table below.
 
-| State           | UART Terminal output          | Description                                                  |
-| --------------- | ----------------------------- | ------------------------------------------------------------ |
-| Motor OFF       | Motor is in idle state!       | Motor is in off state                                        |
-| Normal          | Normal_Operation              | Motor is running normally(no load or balanced load)          |
-| Unbalanced load | Unbalanced_load               | Unbalanced load is detected                                  |
-| Buffer Overflow | Overrun!                      | Processing is not able to keep up with real-time; data buffer has been reset. |
-| ERROR           | ERROR: Got a bad motor status | The motor controller has recognized a fault condition, under which it is unable to proceed safely with normal control activities. |
-
-Note the firmware class ID mapping is as below:
-
-- *Unknown* - 0 (input outside of modeled behavior)
-- *Normal_Operation* - 1
-- *Unbalanced load* - 2
+| UART Terminal output           | Description                                                        |
+| ------------------------------ |  ------------------------------------------------------------ |
+| Idle                           | The dumbbell is stationary                                   |
+| Bicep curl                     | The user is performing the Bicep curl exercise using the smartbell         |
+| Shoulder Press                 | The user is performing a Shoulder press exercise using the smartbell                         |
+| Lateral Raise                  | The user is performing a lateral raise exercise using the smartbell   |
+| ERROR                          | The Model is not able to classify the project correctly |
 
 ## Running the application Demo
 
- 
+- Start MPLAB X IDE and open the project `wbz451-smartbell-lib/ml-wbz451-imu-smartbell-lib.X` with device selection dsPIC33CK256MP508.
 
-- Start MPLAB X IDE and open the project `anomaly-detection-ml-33ck256mp508-lvmc.X` with device selection dsPIC33CK256MP508.
-
-- Set the project `anomaly-detection-ml-33ck256mp508-lvmc.X` as the main project.
+- Set the project `ml-wbz451-imu-smartbell-lib.X` as the main project.
 
 - Open the `app_config.h` file located under Header Files. 
 
 - Ensure that the macro **`DATA_STREAMER_FORMAT`** is set as **`DATA_STREAMER_FORMAT_NONE`**
 
 ​                               
-                       ![macros](assets/macros.png)
+                       ![macros](Images/macros.png)
 
  
 
-- Open project properties and ensure that the selected MPLAB® XC16 Compiler and Device Pack support the device configured in the firmware. 
+- Open project properties and ensure that the selected MPLAB® XC32 Compiler and Device Pack support the device configured in the firmware. 
 
 - Build the project and program the device. 
 
@@ -96,33 +86,7 @@ Note the firmware class ID mapping is as below:
   - Stop bits 1
   - Parity None
 
-The below message will be printed right after the device reset. Indicating Knowledge pack number and the motor status. 
 
-  
-
-![after_reset](assets/afterreset_idel.png)
-
-
-
-- Press switch SW1 to start the motor. If the motor runs normally, the below  output will be shown. 
-
-![normal](assets/normal.png)
-
- 
-
-If an unbalanced load is detected:
-
-![unabalnced_load](assets/unabalnced_load.png)
-
- 
-
-
-
-## Firmware Benchmark
-With  ``-O2`` level compiler optimizations, and 100MHz clock (Fcy)
-- 25.9kB Flash
-- 9.3kB RAM
-- 25ms Inference time(average)
 
 ## Classifier Performance
 Below is the confusion matrix for the test dataset. Note that the classes are highly imbalanced so accuracy is not a good indicator of overall performance.
