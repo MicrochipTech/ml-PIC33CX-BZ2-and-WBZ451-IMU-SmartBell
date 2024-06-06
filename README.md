@@ -49,6 +49,42 @@ The initial phase of constructing a machine-learning model involves the acquisit
              ![Exercises](Images/Picture4.png)
 ## Data Collection Firmware
 A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-PIC33CX-BZ2 and WBZ451 data logger]([https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger)) repository.
+In this section, the recommended approach for gathering data samples to build the exercise classifier model is discussed.
+To begin the data collection process, it is essential to identify a suitable sensor configuration for your specific application. This will involve determining the optimal placement of the sensor, selecting an appropriate installation method, and configuring the signal processing parameters, such as the sample rate and sensitivity.
+
+
+## Sensor Installation
+•	To attach the PIC32CX-BZ2 board to the Dumbbell, a standard mounting putty was utilized, which is commonly used for mounting lightweight objects like posters onto walls. The board was placed in its default orientation, where the accelerometer reads X=0, Y=0, Z=1g. The placement was chosen for its ease of installation and no particular reason.
+Sensor Sampling Configuration
+The sensor sampling parameters are summarized below:
+•	Sensor: 3-axis Accelerometer + 3-axis Gyrometer
+•	Sample Rate / Frequency Range: 100 Hz (~40 Hz 3 dB cutoff)
+•	Accelerometer Full Scale Range: +/-2G (most sensitive setting)
+•	Gyrometer Full Scale Range: +/-125 DPS (most sensitive setting)
+Keep in mind that the configuration above was derived from analysis on a specific Dumbbell, so it may not be optimal for different setups.
+
+## Data Collection Protocol
+To proceed with the data collection process, the next essential step involves creating a protocol that outlines the necessary procedures for collecting data. This entails determining the number of samples to be collected, the metadata parameters to be captured and other relevant parameters that will govern the data collection procedure. The protocol will serve as a guide for executing the data collection process and ensure that the data collected is consistent and accurate.
+
+## Data Collection: Metadata
+Initially, it is imperative to address metadata, as it significantly contributes to contextualizing our data. In this application, our metadata comprises solely the dataset, which is partitioned into training and testing subsets.
+
+## Data Collection: Sampling Method
+At this stage, it is necessary to decide the data sampling process for our application. This involves determining the number of samples to be collected and defining the necessary steps for measuring the data. In the context of this example application, the methodology can be summarized in the following steps:
+•	Record and label segments for each of the following Exercises settings: overhead press, Biceps curl and lateral raises.
+How to Configure, Compile and Flash
+This document explains the steps involved in configuring the data logger firmware build, compiling it and flashing it to the PIC32CX-BZ2 device. Follow the instructions below:
+1.	Connect the Curiosity Nano board to your PC using a USB cable.
+2.	Install the MPLAB X IDE and XC32 compiler on your PC. These are essential tools for loading the data logger project and programming the PIC32CX-BZ2 board.
+3.	Open the firmware/avr128da48_cnano_imu.X project folder in MPLAB X.
+4.	Choose the appropriate MPLAB X Project Configuration for your sensor based on the table provided below.
+Select the data streaming format you want by setting the DATA_STREAMER_FORMAT macro in firmware/src/app_config.h to the appropriate value as summarized in the table below.
+Figure 1-18. Selecting the type of data streamer format.
+ 
+1.	Modify high level sensor parameters like sample rate (SNSR_SAMPLE_RATE), accelerometer range (SNSR_ACCEL_RANGE) and others by changing the macro values defined in firmware/src/app_config.h. See the inline comments for further details.
+When you are satisfied with your configuration, click the Make and Program Device icon button in the toolbar (see image below for reference).
+Figure 1-19. Programming the device
+ 
 
 ## Firmware Operation
 
@@ -58,7 +94,7 @@ The behavior of the firmware can be summarized as operating in one of the distin
 | ------------------------------ |  ------------------------------------------------------------ |
 | Idle                           | The dumbbell is stationary                                   |
 | Bicep curl                     | The user is performing the Bicep curl exercise using the smartbell         |
-| Shoulder Press                 | The user is performing a Shoulder press exercise using the smartbell                         |
+| overhead Press                 | The user is performing a Shoulder press exercise using the smartbell       |
 | Lateral Raise                  | The user is performing a lateral raise exercise using the smartbell   |
 | ERROR                          | The Model is not able to classify the project correctly |
 
@@ -92,5 +128,5 @@ The behavior of the firmware can be summarized as operating in one of the distin
 ## Classifier Performance
 Below is the confusion matrix for the test dataset. Note that the classes are highly imbalanced so accuracy is not a good indicator of overall performance.
 
-![Test set confusion matrix](assets/confusion_matrix.png)
+![Test set confusion matrix](Images/21.png)
 
