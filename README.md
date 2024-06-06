@@ -45,8 +45,9 @@ The kit is mounted on one end of the dumbbell using double-sided sticky tape and
 
 
 ## Data Collection
-The [dataset](/dataset) used for the development of this application consists of data files of Overhead press, bicep curl and lateral raises exercises.
+The [dataset](/Dataset) used for the development of this application consists of data files of Overhead press, bicep curl and lateral raises exercises.
 
+             ![Exercises](Images/macros.png)
 ## Data Collection Firmware
 A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-PIC33CX-BZ2 and WBZ451 data logger]([https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger)) repository.
 
