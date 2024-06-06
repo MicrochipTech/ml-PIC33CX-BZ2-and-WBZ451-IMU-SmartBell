@@ -45,10 +45,10 @@ The kit is mounted on one end of the dumbbell using double-sided sticky tape and
 
 
 ## Data Collection
-The [dataset](/dataset) used for the development of this application consists of Motor IQ current and Motor RPM measurements taken from a 24V 3-Phase Brushless DC Motor connected to a dsPIC33CK LVMC Development Board, running on an FOC motor control algorithm. No sensors were used in this application. For further description of the application setup, see the [Predictive Maintenance with MPLAB ML tutorial](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html). 
+The [dataset](/dataset) used for the development of this application consists of data files of Overhead press, bicep curl and lateral raises exercises.
 
 ## Data Collection Firmware
-A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-33ck265mp508-lvmc-datalogger](https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger) repository.
+A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-PIC33CX-BZ2 and WBZ451 data logger]([https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger)) repository.
 
 ## Firmware Operation
 
