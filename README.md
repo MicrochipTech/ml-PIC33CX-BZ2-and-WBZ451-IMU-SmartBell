@@ -38,16 +38,15 @@ repo), transmit the acquired data to the ML Model Builder, construct a personali
 
 ## Setup
 The kit is mounted on one end of the dumbbell using double-sided sticky tape and rubber bands. The USB cable is tied around the handle to prevent the kit from being pulled off.
-  | ![Dumbbell](Images/Picture4.png) |
+  | ![Dumbbell](Images/Picture3.jpg) |
   | :--: |
   | *Smartbell setup* |  
 
 
 
 ## Data Collection
-The [dataset](/Dataset) used for the development of this application consists of data files of Overhead press, bicep curl and lateral raises exercises.
-
-             ![Exercises](Images/macros.png)
+The initial phase of constructing a machine-learning model involves the acquisition of data. This dataset serves as the foundation for training the ML model, enabling it to discern various types of exercises. In this particular instance, the model will be trained to identify three distinct exercises.
+             ![Exercises](Images/Picture4.png)
 ## Data Collection Firmware
 A binary build of the data logging firmware used in the data collection for this project can be found in the [binaries folder of this repo](/binaries); to build data logging firmware for different  configurations, visit the [ml-PIC33CX-BZ2 and WBZ451 data logger]([https://github.com/MicrochipTech/ml-dsPIC33CK-LVMC-Data-Logger](https://github.com/MicrochipTech/ml-PIC33CX-BZ2-and-WBZ451-IMU-Datalogger)) repository.
 
